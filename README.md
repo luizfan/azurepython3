@@ -133,7 +133,7 @@ from azurepython3.blobservice import BlobService
 svc = BlobService.discover()
 
 blobs = svc.list_blobs('container-name', prefix = None)
-for b in blob:
+for b in blobs:
 	print("%s (%s)" % (b.name, b.url))
 	print(b.properties)
 ```
